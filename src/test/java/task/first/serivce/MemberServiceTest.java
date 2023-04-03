@@ -11,13 +11,15 @@ import java.util.Optional;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
+// ctrl shft t  테스트 자돟 생성
+
 class MemberServiceTest {
 
     MemberService memberService;
     //MemoryMemberRepository memberRepository = new MemoryMemberRepository();
     MemoryMemberRepository memberRepository;
 
-    @BeforeEach
+    @BeforeEach  // 테스트 전에
     public void beforeEach() {
 
         memberRepository = new MemoryMemberRepository();
@@ -25,7 +27,7 @@ class MemberServiceTest {
 
     }
 
-    @AfterEach
+    @AfterEach  //각각 테스트 후
     public void afterEach() {
         memberRepository.clearStore();
     }

@@ -1,11 +1,14 @@
 package task.first.serivce;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import task.first.domain.Member;
 import task.first.repository.MemberRepository;
 import task.first.repository.MemoryMemberRepository;
 
 import java.util.List;
 import java.util.Optional;
+
 
 public class MemberService {
     private final MemberRepository memberRepository;

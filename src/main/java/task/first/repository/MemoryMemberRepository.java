@@ -1,8 +1,10 @@
 package task.first.repository;
 
+import org.springframework.stereotype.Repository;
 import task.first.domain.Member;
 
 import java.util.*;
+
 
 public class MemoryMemberRepository implements MemberRepository{
     private  static Map<Long,Member> store=new HashMap<>();
